@@ -42,4 +42,4 @@ jobs:
         shell: bash
 
       - name: Run analysis
-        uses: ossf/scorecard-dependencyanalysis@c647ca87e668983c56bba5dae038d63394f4ed0e # dependency-analysis
+        uses: ossf/scorecard-dependencyanalysis@dependency-analysis # dependency-analysis
