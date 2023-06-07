@@ -36,3 +36,5 @@ jobs:
 
       - name: Run analysis
         uses: ossf/scorecard-dependencyanalysis@dependency-analysis # dependency-analysis
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
