@@ -14,6 +14,8 @@ jobs:
   dependency-analysis:
     name: Scorecards dependency analysis
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Harden Runner
