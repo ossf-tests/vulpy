@@ -14,13 +14,6 @@ jobs:
   dependency-analysis:
     name: Scorecards dependency analysis
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PR_NUMBER: ${{ github.event.number }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_REPOSITORY: ${{ github.repository }}
-      GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-      GITHUB_SHA: ${{ github.sha }}
-      GITHUB_ACTOR: ${{ github.actor }}
 
     steps:
       - name: Harden Runner
